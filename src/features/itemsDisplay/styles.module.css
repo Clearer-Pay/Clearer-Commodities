@@ -1,0 +1,161 @@
+.resultsWrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(595px, 1fr));
+    gap: 50px;
+}
+
+
+.item {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: 0px 4px 37px 0px #0000001A;
+}
+
+.item .avgScore {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5PX;
+    background-color: var(--LightYellow);
+    padding: 10px;
+    border-radius: 6px;
+    right: 28px;
+    top: 28px;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--txtGrey1);
+}
+
+.item h2 {
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 28px;
+    color: var(--BtnDarkTxt);
+    margin-bottom: 10px;
+}
+
+.item .itemLocation {
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--darkgreyTextColor);
+    margin: 28px;
+    margin-top: 0px;
+}
+
+.item img {
+    width: 100%;
+    height: 264px;
+    object-fit: contain;
+    background-color: var(--imgBG);
+}
+
+.item .itemDescription {
+    margin: 28px;
+    margin-bottom: 16px;
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--darkgreyTextColor);
+}
+
+.item .itemPrice {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 6px;
+    border: 0.6px solid #DADADA;
+    width: fit-content;
+    margin-left: 28px;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--darkgreyTextColor50);
+}
+
+.item .itemPrice span {
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--BtnDarkTxt);
+}
+
+.item .itembtns {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 28px;
+    margin-top: 20px;
+}
+
+.item .itembtns button {
+    height: 44px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: var(--secondary-color-green);
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    text-align: left;
+    color: var(--white);
+}
+
+.item .itembtns .viewDetailsBtn {
+    background-color: var(--white);
+    color: var(--secondary-color-green);
+    border: solid 1.3px var(--secondary-color-green);
+
+}
+
+
+@media (max-width: 1440px) {
+    .resultsWrapper {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 454px) {
+
+    .item h2 {
+        margin-top: 70px;
+    }
+
+    .item .avgScore {
+        right: unset;
+        border-radius: 0px 6px 6px 0px;
+    }
+
+    .resultsWrapper {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 387px) {
+    .item .itembtns {
+        align-items: unset;
+        flex-direction: column;
+    }
+}

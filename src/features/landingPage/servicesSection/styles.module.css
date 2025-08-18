@@ -1,0 +1,139 @@
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BtnDarkTxt);
+    height: fit-content;
+    width: 100%;
+    padding: 60px 100px 87px 100px;
+    position: relative;
+}
+
+.services {
+    border: dashed 2px var(--secondary-color-green);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.services .service {
+    color: var(--white);
+    background-color: var(--transparent-color-green-2);
+    height: 314px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all ease .1s;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service::after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    z-index: -1;
+    border: inherit;
+    transform: scale(1);
+    transition: all ease .1s;
+}
+
+@media (hover:hover) {
+    .services .service:not(:disabled):hover::after {
+        transform: scale(1.02);
+    }
+
+
+
+}
+
+.buttonStyles:not(:disabled)::after {}
+
+
+.services .service:hover {
+    background-color: var(--secondary-color-green-darker);
+}
+
+
+
+
+.services .service ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services .service ul li {
+    font-family: Nunito Sans;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: left;
+    color: var(--txtGrey);
+}
+
+.services h1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--white);
+    font-family: Nunito Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 31.2px;
+    text-align: left;
+}
+
+.services svg {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.servicesContainer h2 {
+    position: absolute;
+    color: var(--secondary-color-green);
+    font-family: Nunito Sans;
+    font-size: 1.25rem;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    background-color: var(--BtnDarkTxt);
+    padding: 5px;
+}
+
+@media (max-width:810px) {
+    .servicesContainer {
+        padding: 60px 16px 87px 16px;
+    }
+
+
+    .services {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+@media (max-width: 435px) {
+    .services h1 {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 373px) {
+    .service {
+        height: fit-content !important;
+    }
+}

@@ -1,0 +1,155 @@
+.contactPageWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 105px;
+  background-color: var(--greyBackground);
+  max-width: 2000px;
+}
+
+.contactPage {
+  display: flex;
+  justify-content: space-between;
+  gap: 208px;
+  padding: 60px 100px 66px 100px;
+}
+
+.contact-heading {
+  font-family: DM Sans;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--BtnDarkTxt);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.contact-description {
+  font-family: Nunito Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--textGrey2);
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.companyDetails {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* margin-top: 60px; */
+}
+.companyDetails:nth-of-type(2) {
+  margin-top: 40px;
+}
+.companyDetails .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+.detail h4 {
+  font-family: Nunito Sans;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color-green);
+  margin: 0;
+}
+
+.detail .detailsInfo p {
+  font-family: Nunito Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: var(--BtnDarkTxt);
+  margin: 0;
+  text-wrap: wrap;
+}
+
+.sendAMessageFrm {
+  width: 100%;
+  max-width: 474px;
+  min-width: 474px;
+  height: fit-content;
+  padding: 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0px 1px 2px 0px #00000033;
+  background-color: var(--white);
+  margin-top: 20px;
+}
+
+.sendAMessageFrm form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sendAMessageFrm button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 141px;
+  height: 44px;
+  border-radius: 6px;
+  font-family: Nunito Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--secondary-color-green);
+}
+
+@media (max-width: 1125px) {
+  .contactPage {
+    display: flex;
+    justify-content: unset;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 100px 66px 100px;
+  }
+}
+
+@media (max-width: 881px) {
+  .sendAMessageFrm {
+    max-width: unset;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 810px) {
+  .contact-heading {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .contactPage {
+    padding: 56px 16px 66px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .companyDetails .detail {
+    gap: 0;
+    /* flex: 0; */
+  }
+
+  .detail h4 {
+    font-size: 1rem;
+  }
+
+  .companyDetails {
+    margin-top: 40px;
+    gap: 30px;
+    flex-direction: column;
+    align-items: start;
+  }
+}

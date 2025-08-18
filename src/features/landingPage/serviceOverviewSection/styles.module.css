@@ -1,0 +1,117 @@
+.serviceOverviewContainer {
+    display: flex;
+    background-image: url('../../../assets//landingpage/serviceoverview/background.jpg');
+    height: 561px;
+    max-height: 561px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    max-width: 2000px;
+}
+
+.serviceOverviewC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin: 80px 100px 0 100px;
+    width: 100%;
+    height: 481px;
+    padding: 40px;
+    border-radius: 20px 20px 0px 0px;
+    background: var(--serviceOvrBg);
+    backdrop-filter: blur(3px);
+}
+
+.serviceOverviewC h1 {
+    font-family: Nunito Sans;
+    font-size: 3.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--white);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.serviceOverviewC h1 span {
+    color: var(--secondary-color-green);
+}
+
+.serviceOverviewC p {
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    color: var(--white);
+}
+
+.serviceOverviewC button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    height: 44px;
+    border-radius: 6px;
+    background: var(--secondary-color-green);
+    margin-top: 20px;
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    color: var(--white);
+}
+
+
+@media (max-width: 830px) {
+    .serviceOverviewContainer {
+        height: fit-content;
+        max-height: fit-content;
+    }
+
+    .serviceOverviewC {
+        height: fit-content;
+
+    }
+
+    .serviceOverviewC h1 {
+        font-size: 2.5rem;
+        width: fit-content;
+    }
+}
+
+@media (max-width:810px) {
+    .serviceOverviewC {
+        margin: 80px 16px 0 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .serviceOverviewContainer {
+
+        background-attachment: unset;
+    }
+}
+
+@media (max-width: 557px) {
+    .serviceOverviewC h1 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 485px) {
+    .serviceOverviewC h1 {
+        font-size: 1.5rem;
+    }
+
+    .serviceOverviewC {
+        padding: 10px;
+        margin: 80px 10px 0 10px;
+    }
+}

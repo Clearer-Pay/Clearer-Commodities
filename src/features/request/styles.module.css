@@ -1,0 +1,332 @@
+.quoteRequestPage {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+    background-color: var(--white);
+    padding: 40px 100px 148px 100px;
+}
+
+.quoteRequestPage .requestQuoteForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.quoteRequestPage .requestQuoteForm h1 {
+    font-family: Nunito Sans;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: fit-content;
+}
+
+
+.requestQuoteForm .formTitle {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 10px;
+    width: 470px;
+    height: 44px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: var(--yellow);
+    color: var(--darkgreyTextColor);
+}
+
+.requestQuoteForm .formTitle span {
+    font-weight: 700;
+}
+
+.requestQuoteForm .formTitle p {
+    margin: 0;
+    margin-top: 5px;
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--darkgreyTextColor);
+}
+
+.requestQuoteForm form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    width: 422px;
+    height: 293px;
+    gap: 24px;
+}
+
+.requestQuoteForm form button {
+    background-color: var(--secondary-color-green);
+    height: 44px;
+    min-height: 44px;
+    border-radius: 6px;
+    color: var(--white);
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    text-align: left;
+}
+
+/* item */
+
+.QPitemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 595px;
+    margin-top: 70px;
+}
+
+.QPitemDetails .item {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: 0px 4px 37px 0px #0000001A;
+}
+
+.QPitemDetails .item .avgScore {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5PX;
+    background-color: var(--LightYellow);
+    padding: 10px;
+    border-radius: 6px;
+    right: 28px;
+    top: 28px;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--txtGrey1);
+}
+
+.QPitemDetails .item h2 {
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 28px;
+    color: var(--BtnDarkTxt);
+    padding-bottom: 10px;
+}
+
+.QPitemDetails .item .itemLocation {
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--darkgreyTextColor);
+    padding: 28px;
+    padding-top: 0px;
+}
+
+.QPitemDetails .item img {
+    width: 100%;
+    height: 264px;
+    object-fit: contain;
+    background-color: var(--imgBG);
+}
+
+.QPitemDetails .item .itemDescription {
+    padding: 28px;
+    padding-bottom: 16px;
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--darkgreyTextColor);
+}
+
+.QPitemDetails .item .itemPrice {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 6px;
+    border: 0.6px solid #DADADA;
+    width: fit-content;
+    margin-left: 28px;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--darkgreyTextColor50);
+}
+
+.QPitemDetails .item .itemPrice span {
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--BtnDarkTxt);
+}
+
+.QPitemDetails .item .itembtns {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 28px;
+    padding-top: 20px;
+}
+
+.QPitemDetails .item .itembtns button {
+    height: 44px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: var(--secondary-color-green);
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    text-align: left;
+    color: var(--white);
+}
+
+.QPitemDetails .item .itembtns .viewDetailsBtn {
+    background-color: var(--white);
+    color: var(--secondary-color-green);
+    border: solid 1.3px var(--secondary-color-green);
+
+}
+
+
+.quoteRequestPage .priceDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteRequestPage .priceDetails .priceDetailsHd {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    height: 44px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: var(--yellow);
+    color: var(--BtnDarkTxt);
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20.83px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+
+.quoteRequestPage .priceDetails .units,
+.quoteRequestPage .priceDetails .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+    border: 0.6px solid #DADADA;
+    border-top: 0;
+    padding: 0 24px;
+}
+
+.quoteRequestPage .priceDetails .total {
+    border-radius: 0px 0px 6px 6px;
+
+}
+
+
+.quoteRequestPage .priceDetails p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: .875rem;
+    font-family: DM Sans;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--darkgreyTextColor);
+}
+
+.quoteRequestPage .priceDetails .total p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--BtnDarkTxt);
+}
+
+.quoteRequestPage .priceDetails .total p:last-child {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1291px) {
+    .quoteRequestPage {
+        justify-content: unset;
+        flex-direction: column;
+    }
+
+    .requestQuoteForm .formTitle {
+        width: 100%;
+    }
+
+    .requestQuoteForm form {
+        padding: 0 24px;
+        width: 100%;
+    }
+
+    .QPitemDetails {
+        width: 100%;
+    }
+}
+
+@media (max-width:810px) {
+    .quoteRequestPage {
+        padding: 40px 16px 148px 16px;
+    }
+}
+
+@media (max-width: 630px) {
+    .quoteRequestPage {
+        padding: 40px 10px 148px 10px;
+    }
+
+    .quoteRequestPage .requestQuoteForm h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 454px) {
+
+    .QPitemDetails .item h2 {
+        padding-top: 70px;
+    }
+
+    .QPitemDetails .item .avgScore {
+        right: unset;
+        border-radius: 0px 6px 6px 0px;
+    }
+
+}
+
+@media (max-width: 387px) {
+    .QPitemDetails .item .itembtns {
+        align-items: unset;
+        flex-direction: column;
+    }
+}

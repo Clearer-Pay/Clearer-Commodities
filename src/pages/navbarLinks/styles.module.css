@@ -1,0 +1,140 @@
+.detail-container {
+    display: flex;
+    width: 100vw;
+    max-width: 2000px;
+    margin-top: 105px;
+    padding: 54px 100px 66px 100px;
+    background-color: var(--white);
+    min-height: 729px;
+    gap: 76px;
+}
+
+.detail-heading {
+    font-family: DM Sans;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 57.6px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--BtnDarkTxt);
+    margin-top: 0;
+}
+
+.detail-description,
+.detail-services-intro {
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--textGrey2);
+}
+
+.detail-services-intro {
+    margin-bottom: 40px;
+}
+
+.detail-services-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.detail-services-list li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--black);
+}
+
+.detail-image {
+    width: 467px;
+    height: 472px;
+    min-width: 467px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.detail-services-list-img img {
+    display: none;
+}
+
+@media (max-width: 1170px) {
+    .detail-container {
+        flex-direction: column;
+    }
+
+    .detail-services-list-img {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .detail-services-list-img img {
+        display: flex;
+    }
+
+    .detail-container img:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 1170px) {
+    .detail-services-list-img img {
+        display: none;
+    }
+
+    .detail-container img:nth-child(1) {
+        display: flex;
+    }
+}
+
+@media (max-width: 810px) {
+    .detail-container {
+        padding: 54px 16px 66px 16px;
+    }
+
+    .detail-heading {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .detail-description,
+    .detail-services-list li a {
+        font-size: .875rem;
+    }
+
+    .detail-services-list {
+        gap: 20px;
+    }
+
+    .detail-services-intro {
+        margin-bottom: 20px;
+    }
+
+    .detail-container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 534px) {
+    .detail-image {
+        width: 100%;
+        aspect-ratio: 1;
+        min-width: unset;
+        min-height: unset;
+        height: unset;
+
+    }
+}

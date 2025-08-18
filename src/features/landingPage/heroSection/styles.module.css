@@ -1,0 +1,423 @@
+.heroSectionContainer {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    max-height: 1000px;
+    min-height: fit-content;
+    min-height: 700px;
+    margin-top: 105px;
+    background-color: var(--white);
+    padding: 48px 100px 50px 100px;
+    overflow-x: hidden;
+}
+
+
+.heroContainer1 {
+    width: fit-content;
+    display: flex;
+}
+
+.deliveryFormWrapper {
+    width: 308px;
+    min-width: 308px;
+    height: fit-content;
+    padding: 20px 24px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 37px 0px #00000026;
+    margin-top: 32px;
+    background-color: var(--white);
+}
+
+.deliveryFormButtons {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 48px;
+    gap: 10px;
+    border-radius: 6px;
+    border: 0.6px solid #DADADA;
+    background: var(--white);
+}
+
+.deliveryFormButtons button {
+    width: 100%;
+    max-width: 130px;
+    height: 36px;
+    border-radius: 6px;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: var(--BtnDarkTxt);
+    background: var(--BtnBgwhite);
+}
+
+.deliveryFormButtons .activeForm {
+    background: var(--secondary-color-green);
+    color: var(--white);
+}
+
+.deliveryFormWrapper .deliveryForm {
+    margin-top: 20px;
+}
+
+.deliveryFormWrapper .deliveryForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+    background: var(--secondary-color-green);
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    color: var(--white);
+}
+
+.heroSectionContainer .map {
+    width: 100%;
+    height: fit-content;
+    min-height: fit-content;
+    margin-left: 80px;
+    position: relative;
+}
+
+.heroSectionContainer .map .plus,
+.location,
+.destination,
+.supply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 100vw;
+    z-index: 3;
+}
+
+.heroSectionContainer .map svg {
+    width: 100%;
+    height: 100%;
+}
+
+.heroSectionContainer .map .plus {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.heroSectionContainer .map .selected {
+    opacity: 1;
+    animation: dropAndBounce 0.6s ease-out forwards;
+}
+
+.heroSectionContainer .map .plus svg {
+    width: 2.5vw;
+    height: 2.5vw;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.heroSectionContainer .map svg path {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes dropAndBounce {
+    0% {
+        transform: translateY(-200px) scale(0.5) rotate(180deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(50px) scale(1.3) rotate(90deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.1) rotate(45deg);
+    }
+
+    75% {
+        transform: translateY(10px) scale(1.15) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.line {
+    position: absolute;
+    height: .3vw;
+    max-height: 5px;
+    top: 0;
+    transform-origin: 0 50%;
+    background: var(--secondary-color-green);
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+
+/* filter modal */
+.filterBy {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 362px;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 10px;
+    z-index: 900;
+    transition: all .3s ease-in-out;
+}
+
+.filterInputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+}
+
+.filterBy h1 {
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: var(--BtnDarkTxt);
+    margin: 0;
+    margin-top: 10px;
+}
+
+.filterPbtn {
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    background-color: var(--secondary-color-green);
+    height: 44px;
+    min-height: 44px;
+    border-radius: 6px;
+    color: var(--white);
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-top: 20px;
+    transition: all .35s ease-in-out;
+}
+
+.thankyouModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 470px;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.thankyouModal H1{
+    font-family: Nunito Sans;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 31.2px;
+    color: var(--black);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.thankyouModal p{
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: center;
+
+}
+
+.thankyouModal svg{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+/* .heromessage {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family:Nunito Sans;
+    height: 430px;
+    width: 100%;
+}
+
+.heromessage h1 {
+    font-size: 3rem;
+    color: var(--BtnDarkTxt);
+    font-weight: 600;
+    max-width: 700px;
+
+}
+
+.heromessage .bldTx1 {
+    color: var(--secondary-color-green);
+    font-size:3.3rem;
+    font-weight: 700;
+    
+} */
+
+@media (min-width: 2000px) {
+    .heroSectionContainer {
+        width: 2000px;
+        max-width: 2000px;
+    }
+}
+
+@media (max-width: 1547px) {
+    .heroSectionContainer .map .plus svg {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+@media (max-width: 1158px) {
+
+    .heroSectionContainer .map {
+        margin-left: 0px !important;
+    }
+}
+
+
+@media (max-width: 1260px) {
+    .heroSectionContainer {
+        position: relative;
+        flex-direction: column;
+        height: fit-content;
+        max-height: unset;
+    }
+
+    .heroSectionContainer .map {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .heroSectionContainer .map svg {
+        width: unset;
+        height: unset;
+    }
+
+    .heroContainer1 {
+        width: 100%;
+        display: flex;
+    }
+
+    .heromessage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .deliveryFormWrapper {
+        width: 100%;
+    }
+
+    .deliveryFormButtons {
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .deliveryFormButtons button {
+        width: 100%;
+        max-width: unset;
+    }
+
+
+    .heroSectionContainer .map .plus svg {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+}
+
+@media (max-width: 852px) {}
+
+@media (max-width:810px) {
+
+    .heroSectionContainer {
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+}
+
+@media (max-width: 588px) {
+
+    .heromessage h1 {
+        font-size: 1.2rem;
+    }
+
+    .heromessage .bldTx1 {
+        color: var(--secondary-color-green);
+        font-size: 1.5rem;
+        font-weight: 700;
+
+    }
+}
+
+@media (max-width: 539px) {
+    .heroSectionContainer {
+        justify-content: unset;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .deliveryFormWrapper {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .deliveryForm {
+        width: 100%;
+    }
+
+
+    .deliveryFormButtons {
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .deliveryFormButtons button {
+        width: 100%;
+    }
+
+    .filterBy {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 362px;
+    }
+
+    .thankyouModal{
+        width: 90vw;
+    }
+}
