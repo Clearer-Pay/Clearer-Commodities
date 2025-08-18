@@ -1,0 +1,328 @@
+.itempg {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 105px;
+    background-color: var(--white);
+    max-width: 2000px;
+    padding: 0 0 66px 0;
+
+}
+
+.itemImages {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    padding: 0 100px 0 100px;
+}
+
+
+.mainimage {
+    width: 100%;
+    max-width: 850px;
+    height: fit-content;
+    max-height: 450px;
+    min-height: 450px;
+    object-fit: contain;
+    background-color: var(--imgBG);
+    border-radius: 6px;
+}
+
+.imageThumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    max-height: 450px;
+}
+
+
+.imageThumbnails img {
+    height: 218px;
+    max-height: 218px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: var(--imgBG);
+}
+
+.itemDetails {
+    display: flex;
+    padding: 0 100px 0 100px;
+    margin-top: 24px;
+    gap: 15px;
+}
+
+.itemDetails1 {
+    position: relative;
+}
+
+.itemDetails .avgScore {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5PX;
+    background-color: var(--LightYellow);
+    padding: 10px;
+    border-radius: 6px;
+    right: 28px;
+    top: 0;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--txtGrey1);
+}
+
+.itemDetails .itemTitle {
+    font-family: Nunito Sans;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: var(--BtnDarkTxt);
+    margin-bottom: 10px;
+}
+
+.itemDetails .itemLocation {
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--darkgreyTextColor);
+    margin-top: 8px;
+}
+
+
+.itemDetails .itemDescription {
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 16px;
+    color: var(--darkgreyTextColor);
+}
+
+.itemDetails .itemPrice {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 6px;
+    border: 0.6px solid #DADADA;
+    width: fit-content;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--darkgreyTextColor50);
+}
+
+.itemDetails .itemPrice span {
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--BtnDarkTxt);
+}
+
+.itemDetails .itembtns {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 60px;
+}
+
+.itemDetails .itembtns button {
+    height: 44px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: var(--secondary-color-green);
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    text-align: left;
+    color: var(--white);
+}
+
+
+.itemDetails .map {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 200px;
+    min-width: 450px;
+    min-height: 200px;
+    margin-top: 20px;
+    background-color: var(--white);
+    position: relative;
+}
+
+.itemDetails .map svg {
+    width: 100%;
+    height: 100%;
+}
+
+.itemDetails .map .mapLocation {
+    position: absolute;
+    display: flex;
+    top: 60px;
+    right: 0;
+}
+
+
+.itemDetails .map .mapLocation p {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    background-color: var(--darkgreyTextColor);
+    color: var(--white);
+}
+
+.itemDetails .map .mapLocation svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.itemDisplayContainer {
+    padding: 0 100px 0 100px;
+    margin-top: 81px;
+}
+
+.itemDisplayContainer .itemTitle {
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--BtnDarkTxt);
+    margin-bottom: -10px;
+}
+
+@media (max-width: 1323px) {
+    .itemImages {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .mainimage {
+        max-width: 100%;
+    }
+
+    .imageThumbnails {
+        flex-direction: unset;
+        max-width: unset;
+        height: fit-content;
+
+    }
+}
+
+@media (max-width: 1117px) {
+    .itemDetails .map {
+        display: none;
+    }
+
+    .itemDetails .avgScore {
+        right: 0;
+    }
+}
+
+@media (max-width: 1005px) {
+    .imageThumbnails {
+        max-width: unset;
+        max-height: 200px;
+        padding: 5px;
+    }
+
+    .imageThumbnails img {
+        height: 150px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+
+    }
+}
+
+@media (max-width:810px) {
+    .itemImages {
+        padding: 0 0 0 16px;
+    }
+
+    .itemDisplayContainer {
+        padding: 0 16px 0 16px;
+    }
+
+    .itemDetails {
+        padding: 0 16px 0 16px;
+        margin-top: 24px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    .itemImages {
+        padding: 0 0 0 0;
+    }
+
+    .itemDetails {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mainimage {
+        height: fit-content;
+        max-height: 350px;
+        min-height: 350px;
+        border-radius: 0;
+    }
+
+    .imageThumbnails {
+        padding: 10px;
+        padding-top: 0px;
+    }
+
+    .itemDisplayContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .itemDetails .avgScore {
+        right: unset;
+        left: 0;
+    }
+
+    .itemDetails .itemTitle {
+        margin-top: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 452px) {
+    .imageThumbnails img {
+        height: 100px;
+        width: 141px;
+
+    }
+}

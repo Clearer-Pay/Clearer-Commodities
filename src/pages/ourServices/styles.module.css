@@ -1,0 +1,134 @@
+.ourServices-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 2000px;
+    margin-top: 105px;
+    padding: 54px 0 66px 0;
+    background-color: var(--white);
+    min-height: 729px;
+}
+
+.ourServices-heading {
+    font-family: DM Sans;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 57.6px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--BtnDarkTxt);
+    margin-top: 0;
+}
+
+.service-heading {
+    font-family: Nunito Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 31.2px;
+    text-align: left;
+    color: var(--BtnDarkTxt);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.service-description {
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--textGrey2);
+    max-width: 697px;
+}
+
+
+
+.detail-services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
+    list-style: none;
+    margin: 0;
+    gap: 40px;
+    padding: 0;
+}
+
+.service-wrapper {
+    padding: 40px 100px;
+}
+
+.service-wrapper:nth-child(2n+1) {
+    background-color: var(--faded-green);
+}
+
+.detail-services-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 12px;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--black);
+}
+
+.detail-services-list li p {
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--black);
+}
+
+.detail-services-list li p span {
+    font-weight: 400;
+    color: var(--textGrey2);
+}
+
+
+@media (max-width: 1338px) {
+    .detail-services-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 810px) {
+    .service-wrapper {
+        padding: 20px 16px;
+    }
+
+    .ourServices-heading {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .service-heading {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .detail-services-list li p,
+    .service-description {
+        font-size: .875rem;
+    }
+
+    .detail-services-list {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 534px) {
+    .detail-image {
+        width: 100%;
+        aspect-ratio: 1;
+        min-width: unset;
+        min-height: unset;
+        height: unset;
+
+    }
+}
