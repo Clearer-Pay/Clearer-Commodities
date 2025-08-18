@@ -1,0 +1,284 @@
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 106px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background: var(--white);
+    z-index: 1000;
+}
+
+.logo {
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 90px;
+    margin-left: -10px;
+}
+
+.mainList {
+    display: flex;
+    justify-content: right;
+}
+
+nav .mainList,
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 68px;
+    background: var(--BtnBgwhite);
+    margin-top: auto;
+}
+
+.navbarShadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    transition: all .15s ease-in;
+}
+
+nav .mainList ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    gap: 52px;
+}
+
+nav .mainList ul li a {
+    text-decoration: none;
+    color: var(--BtnDarkTxt);
+    font-family: "Nunito Sans";
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+nav .mainList ul li a:hover {
+    color: var(--secondary-color-green);
+}
+
+nav button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    height: 44px;
+    text-wrap: nowrap;
+    border-radius: 6px;
+    background: var(--secondary-color-green);
+    margin-right: 100px;
+    margin-left: 30px;
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    color: var(--white);
+}
+
+nav li .active {
+    font-weight: 700 !important;
+}
+
+.hamburgerBtn {
+    display: none;
+}
+
+.sideBarNav {
+    display: none;
+}
+
+@media (max-width: 1218px) {
+
+    .mainList ul li:nth-child(4),
+    .mainList ul li:nth-child(5),
+    .mainList ul li:nth-child(6) {
+        display: none;
+    }
+
+    .sideBarNav ul li:nth-child(1),
+    .sideBarNav ul li:nth-child(3),
+    .sideBarNav ul li:nth-child(2) {
+        display: none;
+    }
+
+
+    .sideBarNav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        width: 350px;
+        min-width: 350px;
+        color: white;
+        z-index: 1001;
+        transform: translateX(100%);
+        transition: all .15s ease;
+    }
+
+    .sideBarNav[sidebar-vis='true'] {
+        transform: translateX(0%);
+        transition: all .15s ease;
+    }
+
+    .sideBarNav .ClsBtnHeader {
+        display: flex;
+        margin-top: 38px;
+        padding: 21px 30px 21px 10px;
+        height: fit-content;
+        width: 100%;
+        background: var(--BtnBgwhite);
+    }
+
+    .ClsBtnHeader button {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .ClsBtnHeader button svg {
+        width: 25px;
+        height: 25px;
+        min-width: 25px;
+        min-height: 25px;
+        color: var(--BtnDarkTxt);
+    }
+
+    .ClsBtnHeader span {
+        height: fit-content;
+        margin-left: calc(46% - 35px);
+        margin-right: 50%;
+        font-family: Nunito Sans;
+        font-size: 1.25rem;
+        font-weight: 800;
+        line-height: 26px;
+        text-align: left;
+        color: var(--BtnDarkTxt);
+    }
+
+    .loginBtn {
+        margin-right: 40px;
+    }
+
+
+    .hamburgerBtn {
+        display: block;
+        background-color: transparent;
+        height: 20px;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 100px;
+    }
+
+    .hamburgerBtn svg {
+        color: var(--BtnDarkTxt);
+        width: 25px;
+        height: 25px;
+        min-width: 25px;
+        min-height: 25px;
+    }
+
+
+    .sideBarNav ul {
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sideBarNav ul li {
+        text-align: center;
+        font-family: Nunito Sans;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 26px;
+        height: 40px;
+    }
+
+    .sideBarNav ul li a {
+        color: var(--white);
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 2000px) {
+    nav {
+        width: 2100px;
+        left: 50.4%;
+        transform: translate(-50%, 0%);
+
+    }
+}
+
+@media (max-width: 810px) {
+    .logo {
+        padding-left: 16px;
+    }
+
+    .hamburgerBtn {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 632px) {
+    .mainList ul li:nth-child(3) {
+        display: none;
+    }
+
+    .sideBarNav ul li:nth-child(3) {
+        display: block;
+    }
+}
+
+@media (max-width: 632px) {
+    .mainList ul li {
+        display: none;
+    }
+
+    .sideBarNav ul li:nth-child(2),
+    .sideBarNav ul li:nth-child(1) {
+        display: block;
+    }
+
+    .sideBarNav {
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 341px) {
+    nav .loginBtn {
+        margin-right: 30px !important;
+        margin-left: 20px;
+    }
+
+    .ClsBtnHeader button {
+        margin-left: 40px;
+    }
+
+    .ClsBtnHeader span {
+        height: fit-content;
+        margin-left: calc(46% - 70px);
+    }
+
+}

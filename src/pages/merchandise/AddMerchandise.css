@@ -1,0 +1,646 @@
+.merchPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 105px;
+    background-color: var(--greyBackground);
+    max-width: 2000px;
+}
+
+.merchPagewrapper {
+    padding: 60px 100px 66px 100px;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-family: DM Sans;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 12px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--BtnDarkTxt);
+    margin-top: 0;
+}
+
+.description {
+    font-family: Nunito Sans;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--textGrey2);
+    margin: 0;
+}
+
+.xlsx-uploader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 179px;
+    height: 44px;
+    overflow: hidden;
+    margin-top: auto;
+    border: 1px solid var(--secondary-color-green);
+    border-radius: 6px;
+
+
+}
+
+.xlsx-upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color-green);
+
+}
+
+.xlsx-upload-button p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin: 0;
+    color: var(--secondary-color-green);
+}
+
+.xlsx-upload-button p svg {
+    margin-right: 10px;
+}
+
+.xlsx-uploader-btn .field {
+    height: 100%;
+    margin-top: -10px;
+    z-index: 10;
+    opacity: 0;
+
+
+}
+
+.xlsx-uploader label {
+    display: none;
+}
+
+
+.xlsx-uploader .xlsx-input input {
+    position: absolute;
+    height: 105px;
+    left: 0;
+    top: -50px;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+    z-index: 6;
+}
+
+.merchandiseForm {
+    margin-top: 75px;
+}
+
+.topForms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.inputformsVariants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.inputForms {
+    width: 100%;
+    max-width: 608px;
+    height: fit-content;
+    background-color: var(--white);
+    padding: 24px;
+    box-shadow: 0px 4px 37px 0px #0000001A;
+    border-radius: 10px;
+    border: 1px solid var(--borderGrey1)
+}
+
+
+
+.inputForms input {
+    background: var(--BtnBgwhite);
+}
+
+.inputForms .field {
+    margin-bottom: 24px;
+}
+
+.inputForms .field:last-child {
+    margin-bottom: 0;
+}
+
+.inputForms .field label {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputForms .field label p {
+    font-family: Nunito Sans;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 18.2px;
+    margin: 0;
+}
+
+.inputForms .field label h4 {
+    font-family: Nunito Sans;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.inputForms  .dropdown-list{
+    top: 80px;
+}
+
+.variants {
+    width: 100%;
+    max-width: 608px;
+    height: fit-content;
+    background-color: var(--white);
+    padding: 24px;
+    box-shadow: 0px 4px 37px 0px #0000001A;
+    border-radius: 10px;
+    border: 1px solid var(--borderGrey1)
+}
+
+.variants .header {
+    font-family: Nunito Sans;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--BtnDarkTxt);
+}
+
+.variants .header span{
+    font-family: Nunito Sans;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--textGrey2);
+}
+ 
+.variants .variantOptions{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.variantOptions .scOptions {
+    position: relative;
+}
+
+.variantOptions .scOptions .scHeader {
+        font-family: Nunito Sans;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: var(--BtnDarkTxt);
+}
+
+.scOptions .scSelectedField {
+    width: 100%;
+    height: 44px;
+    background: var(--BtnBgwhite);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 0px 10px;
+}
+
+.scSelectedField .addVariant {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+    font-family: Nunito Sans;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--secondary-color-green);
+    text-wrap: nowrap;
+}
+.scOptions  .dropdown-list {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 0;
+    left: 0;
+    background-color: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: height .3s ease;
+    z-index: 100;
+
+    /* Hides scrollbar for WebKit browsers */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hides scrollbar for WebKit browsers */
+.scOptions  .dropdown-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.scOptions  .dropdown-list {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+/* Hides scrollbar for Firefox */
+.scOptions  .dropdown-list::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.scOptions .dropdown-list[data-visible='true'] {
+    height: 200px;
+    display: block;
+}
+
+
+.scOptions .dropdown-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.scOptions .dropdown-list ul li button {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border: none;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-size: .81rem;
+    font-weight: 500;
+    transition: all .1s ease-in;
+}
+
+
+.scOptions .dropdown-list ul li button:hover {
+    background-color: var(--secondary-color-green);
+    color: var(--white);
+}
+
+.scOptions .dropdown-list ul .liAddnew {
+    gap: 10px;
+    justify-content: unset;
+}
+
+.scOptions .dropdown-list ul li .addNew{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 40px;
+    border-radius: 0 0 5px 5px;
+}
+
+.scOptions .dropdown-list ul li .addNew input{
+    width: 100%;
+    height: 100%;
+    background-color: var(--BtnBgwhite);
+    border: 0;
+    color: black;
+    padding-left: 10px;
+}
+
+.scOptions .dropdown-list ul li .addNew input:focus {
+    outline: none;
+}
+
+.scOptions .dropdown-list ul li .addNew:has(input:focus) {
+    border: solid var(--secondary-color-green) 2px;
+}
+
+
+
+.scOptions .dropdown-list ul li .addNew button{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.selectedVariants {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow: auto;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.selectedVariants .variant {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    height: 28px;
+    width: fit-content;
+    text-wrap: nowrap;
+    background-color: var(--variantBGGrey);
+    color: var(--borderGrey2);
+    font-family: Nunito Sans;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    border-radius: 4px;
+}
+
+.variant button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.variant button:hover .variant {
+    background-color: red;
+    color: white;
+}
+
+  .productImages {
+      width: 100%;
+      height: 100%;
+      margin-bottom: auto;
+  }
+
+.image-uploader-1 {
+    width: 608px;
+    padding: 24px;
+    box-shadow: 0px 4px 37px 0px #0000001A;
+    border-radius: 10px;
+    border: 1px solid var(--borderGrey1);
+    background-color: var(--white);
+}
+
+.image-uploader-1 .productPhotoshd {font-family: Nunito Sans;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: left;
+    color: var(--BtnDarkTxt);
+
+}
+
+.image-uploader-1 .image-uploader-btn {
+    border: 1px solid var(--borderGrey2);
+    border-radius: 12px;
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+
+.image-uploader-btn input {
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    height: 140%;
+    width: 100%;
+    top: -50px;
+}
+
+.image-uploader-1 .upload-button {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    padding-top: 30px;
+    border: 2px dashed var(--borderGrey2);
+    width: -webkit-fill-available;
+    height: calc(100% - 14px);
+    margin: 7px;
+    border-radius: 9px;
+    background-color: var(--white); 
+}
+
+
+
+.image-uploader-1 .upload-button p {
+    font-family: Nunito Sans;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+    color: var(--borderGrey2);
+    margin: 0;
+}
+.image-uploader-1 .upload-button p span {
+    color: var(--black);
+        text-decoration: underline;
+}
+
+.image-uploader-1 .upload-button p:last-child {
+    text-decoration: underline;
+}
+
+.preview-cont {
+    display: flex;
+    padding: 5px;
+    overflow-x: auto;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    min-height: 97px;
+    gap: 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.preview-cont::-webkit-scrollbar {
+    display: none;
+}
+
+.preview-cont div {
+    position: relative;
+    border: solid transparent 2px;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 102px;
+    height:93px;
+    min-width: 102px;
+    height: 93px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.preview-cont div button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5px;
+    top: 5px;
+    color: var(--black);
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: rgba(255, 255, 255, 0.703);
+    transition: all 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+    .preview-cont div:hover {
+        transform: scale(1.05);
+    }
+}
+
+.preview-cont img {
+    width: 102px;
+    height: 93px;
+    min-width: 102px;
+    min-height: 93px;
+    object-fit: cover;
+}
+
+.preview-cont p {
+    margin: auto;
+}
+.discardSubmitBtn {
+    max-width: 608px;
+    display: flex;
+    gap: 10px;
+    margin-top: 60px;
+    font-family: Nunito Sans;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 19.1px;
+}
+.discardSubmitBtn button{
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+}
+
+.discardSubmitBtn button:first-child{
+    background-color: transparent;
+    color: var(--borderGrey2);
+    border: 1px solid var(--borderGrey2);
+}
+
+.discardSubmitBtn button:last-child{
+    background-color: var(--secondary-color-green);
+    color: var(--white);
+}
+
+.error-message {
+    font-size: .875rem;
+}
+
+@media (max-width: 1445px) { 
+    .image-uploader-1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1213px) {
+    .topForms {
+       flex-direction: column;
+    }
+
+    .inputForms, .variants, .discardSubmitBtn{
+        max-width: unset;
+    }
+
+}
+
+@media (max-width: 977px) {
+    .pageHeader {
+        flex-direction: column;
+        gap: 50px;
+        align-items: unset;
+    }
+}
+
+@media(max-width:810px) {
+    .merchPagewrapper {
+        padding: 56px 16px 66px 16px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .description {
+        font-size: .875rem;
+    }
+
+    .variants .header, .variants .header span{
+        font-size: 1rem;
+    }
+
+.pageHeader {
+    gap: 24px;
+}
+
+.merchandiseForm{
+    margin-top: 40px;
+}
+
+.discardSubmitBtn{
+    margin-top: 40px;
+}
+}
+
+@media(max-width: 397px) {
+.image-uploader-1 .upload-button {
+        align-items: unset;
+    }
+}
+
+.image-uploader-1 .upload-button svg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(max-width: 387px) {
+    .merchPagewrapper {
+        padding: 56px 10px 66px 10px;
+    }
+}
