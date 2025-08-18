@@ -25,7 +25,7 @@ const AboutSection = () => {
               <FirstIcon />
               <h2>On Desk Procurement</h2>
               <p>
-                CO utilizes five fundamental metrics to source commodities.
+                CC utilizes five fundamental metrics to source commodities.
                 These metrics rely on factors like the distance between delivery
                 and source locations, optimized route selection for specific
                 products, counterparties' currency values, comparative
@@ -42,7 +42,7 @@ const AboutSection = () => {
               <SecondIcon />
               <h2>Aggregated Sourcing</h2>
               <p>
-                CO gets the struggles of expanding businesses that require small
+                CC gets the struggles of expanding businesses that require small
                 procurement quantities and face challenges due to economies of
                 scale. We can aggregate procurement needs among our network of
                 commodity buyers, consolidate them into a single requisition,
@@ -66,7 +66,7 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, transition: { delay: 0.2, duration: 0.5 }, y: 0 }}
                 viewport={{ once: true, amount: .5 }}
               >
-                Clearer Outsourcing is a trade solution enabling on-desk
+                Clearer Commodities is a trade solution enabling on-desk
                 procurement and sourcing by leveraging intelligent metrics to
                 identify markets that offer competitive advantages for either
                 offering high end services, selling products or acquiring raw
@@ -96,7 +96,7 @@ const AboutSection = () => {
               <ThirdIcon />
               <h2>Distribution & Real Time Stock Management</h2>
               <p>
-                CO drives the distribution of products and raw materials in
+                CC drives the distribution of products and raw materials in
                 emerging markets. Once a customized market study is completed
                 and endorsed, with product validation & acceptance secured, we
                 manage distribution through the region's wholesale outlets,
