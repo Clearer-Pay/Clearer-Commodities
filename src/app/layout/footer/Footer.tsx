@@ -108,12 +108,7 @@ const Footer = () => {
             Nigeria.
           </p>
         </div>
-        <div className={styles.location}>
-          <SecondFlag />
-          <p className={styles.locationAddress}>
-            Kuklase tn 15-37, 13423 Tallinn, Estonia.
-          </p>
-        </div>
+        
         <div className={styles.location}>
           <FourthFlag />
           <p className={styles.locationAddress}>
@@ -138,7 +133,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <p className={styles.copyright}>© 2025 Clearer.</p>
+        <p className={styles.copyright}>© 2025 Clearer Limited.</p>
       </div>
     </div>
   );

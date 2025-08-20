@@ -7,13 +7,13 @@ const ServiceOverview = () => {
     <div className={styles.serviceOverviewContainer}>
       <div className={styles.serviceOverviewC}>
         <h1>
-          Cross border <span>On desk procurement/Sourcing & Logistics</span>{" "}
-          with the best of technological models
+           Bringing<span>African Producers</span>{" "}
+          to your markets.
         </h1>
 
         <p>
           We maximize the potential value of nations and its businesses by
-          providing comparative advantage in commerce
+          providing comparative advantage in commodity trading
         </p>
 
         <button
